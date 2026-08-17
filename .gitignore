@@ -1,0 +1,69 @@
+# ---------------------------------------------------------------
+# Binarios compilados de STREAM (se regeneran, ver README)
+# ---------------------------------------------------------------
+Stream/stream_l1
+Stream/stream_l2
+Stream/stream_slc
+Stream/stream_ram
+Stream/stream_test480mb
+Stream/stream_*
+!Stream/stream.c
+
+# Objetos y artefactos de compilacion en general
+*.o
+*.obj
+*.a
+*.so
+*.dylib
+*.dSYM/
+a.out
+
+# ---------------------------------------------------------------
+# multichase (si se clona el fuente dentro del repo)
+# ---------------------------------------------------------------
+multichase/
+/multichase
+
+# ---------------------------------------------------------------
+# Python (analizar.py)
+# ---------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# ---------------------------------------------------------------
+# LaTeX (si se versiona el fuente del informe)
+# ---------------------------------------------------------------
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+*.nav
+*.snm
+*.vrb
+!Stream/resultados_stream_cache.log
+!Stream/resultados_stream_threads.log
+
+# ---------------------------------------------------------------
+# Sistema operativo / editores
+# ---------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*~
