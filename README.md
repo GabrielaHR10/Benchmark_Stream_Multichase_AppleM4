@@ -102,17 +102,6 @@ cd multichase && git checkout 8cc8681 && make
 
 Las latencias reportadas se vuelcan a los CSV de `resultados-multichase/`.
 
-### Análisis
-
-```bash
-cd resultados-multichase
-python3 analizar.py     # imprime y reescribe metricas.txt
-```
-
-`analizar.py` no requiere dependencias externas (solo `csv` y `statistics`): calcula saltos
-relativos, mesetas por región, ratios de stride, escalamiento por hilos y desviación estándar,
-y emite las coordenadas listas para `pgfplots`.
-
 ---
 
 ## Resultados principales
@@ -178,16 +167,6 @@ distintas tocadas.
 Hasta 3 hilos la latencia se mantiene plana; en el 4.º salta **+112.8 %**, coherente con el paso
 del clúster de núcleos de rendimiento a los de eficiencia y con la contención del bus.
 
-### Repetibilidad (multichase, P4, 5 corridas)
-
-| Tamaño | Media | Desv. est. | CV |
-|---|---:|---:|---:|
-| 64 KiB | 1.4480 ns | 0.0067 | 0.47 % |
-| 8 MiB | 10.5408 ns | 0.1530 | 1.45 % |
-| 20 MiB | 12.3824 ns | 0.2253 | 1.82 % |
-| 256 MiB | 39.1418 ns | 0.1375 | 0.35 % |
-
-Coeficientes de variación por debajo del 2 % en todos los casos: las mediciones son estables.
 
 ---
 
