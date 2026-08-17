@@ -1,7 +1,6 @@
 # Taller de Jerarquía de Memoria: STREAM + multichase
 
-
-(PDF a LaTex)[informe_Stream_Multichase.pdf]
+[PDF del informe](informe_Stream_Multichase.pdf)
 Taller de HPC sobre la caracterización de la jerarquía de memoria de un sistema Apple Silicon
 (10 núcleos, ARM64). Se combinan dos herramientas complementarias:
 
